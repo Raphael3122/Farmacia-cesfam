@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css"/>
+    <title>Inicio</title>
+</head>
+<body class="online">
+    <header class="prescripcionhead">
+        
+        
+        <nav>
+            
+            <a href="index.html">Salir</a>
+                
+        </nav>
+
+    </header>
+      <div id="formularioEntero" >
+        <form class="row g-3 p-2 col-md-7" id="formulario" method="get" action="reservaAceptada.html" name="form">
+          <div class="col-md-4">
+            <label for="nombres" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="nombres" placeholder="Nombres" value=""  required>
+
+          </div>
+          <div class="col-md-4">
+            <label for="apellido" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="apellido" value="" placeholder="Apellidos" required>
+          </div>
+          <div class="col-md-4">
+            <label for="rut" class="form-label">Rut</label>
+            <input type="text" class="form-control" id="rut" value="" placeholder="xx.xxx.xxx-x" required>
+          </div>
+          <div class="col-md-4">
+            <label for="rut" class="form-label">N° documento</label>
+            <input type="text" class="form-control" id="documento" value="" placeholder="" required>
+          </div>
+
+          <div class="col-md-4">
+            <label for="tel" class="form-label">Telefono</label>
+            <input type="tel" class="form-control" id="tel" value="" placeholder="x xxxx xxxx" required>
+          </div>
+          <div class="col-md-4">
+            <label for="edad" class="form-label">Edad</label>
+            <input type="number" class="form-control" id="edad" value="" placeholder="18" min="18" max="99" required>
+          </div>
+
+          <div class="col-md-4">
+            <label for="habitaciones" class="form-label">Genero</label>
+            <select class="form-select" id="genero" required>
+              <option selected disabled value="">Seleciona</option>
+              <option value="1">Femenino</option>
+              <option value="2">Masculino</option>
+              <option value="3">No definido</option>
+            </select>
+          </div>
+
+          <div class="col-md-5">
+            <label for="validationDefaultUsername" class="form-label">Correo</label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+              <input type="email" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="Correo" required>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="direccion" placeholder="La florida, 6539, Santiago" required>
+          </div>
+          <div class="col-md-6">
+            <label for="llegada" class="form-label">Emision</label>
+            <input type="date" class="form-control" id="llegada" required>
+          </div>
+          <div class="col-md-6">
+            <label for="salida" class="form-label">Vencimiento</label>
+            <input type="date" class="form-control" id="salida" required>
+          </div>
+          <div class="col-md-12">
+            <label for="nombre">Descripción:</label>
+            <textarea type="text" cols="15" rows="7" class="form-control" name="descripcion" id="descripcion" placeholder="Ingrese descripción" class="validate[required] form-control"></textarea>
+        </div>
+          
+          <div class="col-12">
+            
+          </div>
+          <div class="col-12" >
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <button type="reset" class="btn btn-primary" id="boton1">Limpiar</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+    
+    <script src="validaciones.js"></script>
+</body>
+</html>
